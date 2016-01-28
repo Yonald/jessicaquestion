@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+    
+        <title>Will You?</title>
+        
+        <!-- Stylesheet Link -->
+        
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        
+        <!-- Font Links -->
+        
+        <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Script Link -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    </head>
+    
+    <body>
+    
+        <div class="panel cherry">
+            
+            <div class="vcenter container">
+                <p id="jessica">Jessica</p>
+                <img id="heart" src="img/favorite21.png" />
+            </div>
+            
+            <button class="arrow bounce"></button>
+            
+        </div>
+        
+        <div class="panel pacifica">
+        
+            <div class="vcenter container">
+                
+                <section class="cd-intro">
+		          <h1 class="cd-headline slide">
+			         <span>You are </span>
+			         <span class="cd-words-wrapper">
+				        <b class="is-visible">extraordinary.</b>
+                        <b>beautiful.</b>
+                        <b>sympathetic.</b>
+                        <b>sincere.</b>
+                        <b>remarkable.</b>
+                        <b>unique.</b>
+				        <b>funny.</b>
+                        <b>witty.</b>
+                        <b>compassionate.</b>
+				        <b>creative.</b>
+                        <b>stubborn.</b>
+                        <b>ambitious.</b>
+                        <b>adventurous.</b>
+			         </span>
+		          </h1>
+	           </section>
+            
+                <!--<p id="traits">You are <span>beautiful</span>.</p>-->
+            
+            </div>
+        
+        </div>
+        
+        <div class="panel slate">
+        
+            <div class="stitch container">
+            
+                <p>And I have a question for you...</p>
+            
+            </div>
+        
+        </div>
+        
+        <div class="panel grandma">
+        
+            <div class="container vcenter">
+            
+                <p>Will you be my<br /><span>Valentine?</span></p>
+            
+            </div>
+        
+        </div>
+        
+    <script>
+        $(document).ready(function() {
+
+            $('body').css('display', 'none');
+
+            $('body').fadeIn(1000);
+
+
+
+            $('.link').click(function(event) {
+
+                event.preventDefault();
+
+                newLocation = this.href;
+
+                $('body').fadeOut(1000, newpage);
+
+            });
+
+
+
+            function newpage() {
+
+                window.location = newLocation;
+
+            }
+
+        });
+    </script>
+        
+    <script>
+        $("button").click(function() {
+            $('html,body').animate({
+                scrollTop: $(".pacifica").offset().top},
+                'slow');
+        });
+    </script>
+        
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>    
+    
+    </body>
+
+
+</html>
